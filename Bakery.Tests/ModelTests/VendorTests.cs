@@ -15,7 +15,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Order newVendor = new Vendor("test", "test2", "Test4");
+      Vendor newVendor = new Vendor("test", "test2");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
