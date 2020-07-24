@@ -4,7 +4,7 @@ namespace Bakery.Models
 {
   public class Vendor 
   {
-    private static List<Vendor> _listOfOrders = new List<Vendor> {};
+    private static List<Vendor> _listOfVendors = new List<Vendor> {};
     public string VendorName { get; set; }
     public string VendorDescription { get; set; }
     public int Id { get; }
@@ -14,18 +14,22 @@ namespace Bakery.Models
     {
       VendorName = vendorName;
       VendorDescription = vendorDescription;
-      _listOfOrders.Add(this);
-      Id = _listOfOrders.Count;
+      _listOfVendors.Add(this);
+      Id = _listOfVendors.Count;
       Order = new List<Order> {};
     }
     public static void ClearAll()
     {
-      _listOfOrders.Clear();
+      _listOfVendors.Clear();
     }
 
     public static List<Vendor> GetAll()
     {
-      return _listOfOrders;
+      return _listOfVendors;
+    }
+    public static Vendor Find(int searchId)
+    {
+      return _listOfVendors[searchId-1];
     }
   }
 }

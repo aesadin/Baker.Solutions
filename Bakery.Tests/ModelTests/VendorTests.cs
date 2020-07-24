@@ -5,13 +5,14 @@ using System;
 
 namespace Bakery.Tests
 {
-    [TestClass]
-  public class VendorTests : IDisposable
+  [TestClass]
+  public class VendorTest : IDisposable
   {
     public void Dispose()
     {
-      Order.ClearAll();
+      Vendor.ClearAll();
     }
+
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
@@ -19,19 +20,6 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
-    // [TestMethod]
-    // public void GetName_ReturnsName_String()
-    // {
-    //   //Arrange
-    //   string vendorName = "Test Vendor";
-    //   Vendor newVendor = new Vendor(vendorName);
-
-    //   //Act
-    //   string result = newVendor.VendorName;
-
-    //   //Assert
-    //   Assert.AreEqual(vendorName, result);
-    // }
 
     [TestMethod]
     public void GetAll_ReturnsAllCategoryObjects_VendorList()
@@ -53,9 +41,9 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Find_ReturnsCorrectCategory_Vendor()
+    public void Find_ReturnsCorrectVendor_Vendor()
     {
-      //Arrange
+      
       string name1 = "Name1";
       string name2 = "Name2";
       string vendorDescription1 = "pastry shop";
@@ -64,10 +52,10 @@ namespace Bakery.Tests
       Vendor newVendor2 = new Vendor(name2, vendorDescription2);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
-      //Act
+      
       Vendor result = Vendor.Find(2);
 
-      //Assert
+      
       Assert.AreEqual(newVendor2, result);
     }
   }
