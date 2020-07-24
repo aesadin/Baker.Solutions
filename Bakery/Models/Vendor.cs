@@ -13,6 +13,7 @@ namespace Bakery.Models
     public Vendor (string vendorName, string vendorDescription)
     {
       VendorName = vendorName;
+      VendorDescription = vendorDescription;
       _listOfOrders.Add(this);
       Id = _listOfOrders.Count;
       Order = new List<Order> {};
@@ -20,6 +21,11 @@ namespace Bakery.Models
     public static void ClearAll()
     {
       _listOfOrders.Clear();
+    }
+
+    public static List<Vendor> GetAll()
+    {
+      return _listOfOrders;
     }
   }
 }
