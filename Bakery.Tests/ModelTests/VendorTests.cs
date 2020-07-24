@@ -45,19 +45,30 @@ namespace Bakery.Tests
       Vendor newVendor2 = new Vendor(vendorName02, vendorDescription2);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
-      
-      string vendorName03 = "Name3";
-      string vendorName04 = "Name4";
-      string vendorDescription3 = "pastry shop";
-      string vendorDescription4 = "bread shop";
-      Vendor newVendor3 = new Vendor(vendorName03, vendorDescription3);
-      Vendor newVendor4 = new Vendor(vendorName04, vendorDescription4);
-      
-
+    
       List<Vendor> result = Vendor.GetAll();
 
       
       CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectCategory_Vendor()
+    {
+      //Arrange
+      string name1 = "Name1";
+      string name2 = "Name2";
+      string vendorDescription1 = "pastry shop";
+      string vendorDescription2 = "bread shop";
+      Vendor newVendor1 = new Vendor(name1, vendorDescription1);
+      Vendor newVendor2 = new Vendor(name2, vendorDescription2);
+      List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
+
+      //Act
+      Vendor result = Vendor.Find(2);
+
+      //Assert
+      Assert.AreEqual(newVendor2, result);
     }
   }
 }
