@@ -29,5 +29,10 @@ namespace Bakery.Models
     {
       return _listOfOrders;
     }
+
+    public static Order Find(int searchId)
+    {
+      return _listOfOrders[searchId-1];
+    }
   }
 }
