@@ -1,1 +1,8 @@
-// all logic, routes, and views meant to work with 
+using Microsoft.AspNetCore.Mvc;
+using Bakery.Models;
+using System.Collections.Generic;
+
+namespace Bakery.Controllers
+{
+
+}

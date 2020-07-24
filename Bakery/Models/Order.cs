@@ -1,6 +1,8 @@
-namespace ProjectMvcName
+using System.Collections.Generic;
+
+namespace Bakery.Models
 {
-  public class ProjectClass
+  public class Bakery
   {
 
   }
