@@ -38,7 +38,7 @@ namespace Bakery.Tests
       string date2 = "that date";
       Order newOrder1 = new Order(title1, description1, date1);
       Order newOrder2 = new Order(title2, description2, date2);
-      List<Order> newList = new List<Order> { newItem1, newItem2 };
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
@@ -67,9 +67,9 @@ namespace Bakery.Tests
       Order newOrder1 = new Order(title1, description1, date1);
       Order newOrder2 = new Order(title2, description2, date2);
 
-      Order result = Order.Find();
+      Order result = Order.Find(2);
 
-      Assert.AreEqual(newItem2, result);
+      Assert.AreEqual(newOrder2, result);
     }
   }
 }
