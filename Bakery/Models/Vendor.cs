@@ -17,5 +17,9 @@ namespace Bakery.Models
       Id = _listOfOrders.Count;
       Order = new List<Order> {};
     }
+    public static void ClearAll()
+    {
+      _listOfOrders.Clear();
+    }
   }
 }
