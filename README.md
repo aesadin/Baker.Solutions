@@ -1,15 +1,15 @@
 # Pierre's Bakery
 
-#### _An online ordering system_	
+#### _An organizational tool for the owner of Pierre's Bakery_	
 
 #### By _**Allison Sadin**_
-#### Date 07/17/2020
+#### Date 07/24/2020
 
 <br>
 
 ## **DESCRIPTION**
 
-This application will allow the user to order a number of either pastry items or bread. The application will return the total cost of the user's order to them in the console.
+This application will allow the user to create a list of orders and save them in an organized fashion within the vendors information.
 
 <br>
 
@@ -17,12 +17,12 @@ This application will allow the user to order a number of either pastry items or
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
-| Create object constructor that will accept a UserInput 	| 	| typeOf(BreadOrder) |
-| Validate UserInput against criteria (no negative numbers) 	| -1 	| false 	|
-| Create Method that returns order total for 1 loaf of bread| NumberLoaves: 1	| TotalBreadCost = 5 	|
-| Create Method that returns order total for 2 loaf of bread 	| NumberLoaves: 2	| TotalBreadCost = 10|
-| Create Method that adds 1 loaf for every two loaves purchased 	| NumberLoaves: 2 	| TotalLoaves = 3 	|
-| Create Method that adds OrderBread total and OrderPastry total together| OrderBreadTotal: 10, OrderPastryTotal: 5	| TotalCost = 15	|
+| Create object constructor that will accept a UserInput 	| 	| typeOf(Order) |
+| Create method for get all and test 	|  	| 	|
+| Create Method for add order to vendor list | 	|  	|
+| Create Method for Finding orders and vendors by their Id	| 	| |
+| Create Method controllers for both vendor and order 	| 	| 	|
+| add UI using Razor notation | 	| 	|
 
 
 
@@ -72,7 +72,7 @@ This application will allow the user to order a number of either pastry items or
 
 ## **Known Bugs**
 
- _No Known Bugs: 7/16/2020_
+ _No Known Bugs: 7/24/2020_
 
 <br>
 
