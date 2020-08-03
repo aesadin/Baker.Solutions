@@ -35,7 +35,7 @@ This application will allow the user to create a list of orders and save them in
 
 *  _Recommended browser for everything in life. [Google Chrome](https://www.google.com/chrome/)_.
 
-*  _Github [repository](https://github.com/tmemmerson/Scrabble.Solution.git)_
+*  _Github [repository](https://github.com/tmemmerson/Baker.Solution.git)_
 
 
 
@@ -78,7 +78,7 @@ This application will allow the user to create a list of orders and save them in
 
 ## **Support and contact details**
 
-_Questions, comments and concerns can be directed to the author(s) [Tristan Emmerson](tristan@stickerslug.com)_
+_Questions, comments and concerns can be directed to the author(s) [Allison Sadin](aesadin@gmail.com)_
 
 <br>
 

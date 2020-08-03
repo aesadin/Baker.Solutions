@@ -14,6 +14,20 @@ namespace Bakery.Controllers
       return View(vendor);
     }
 
+    [HttpPost("/orders")]
+    public ActionResult Create(string orderName, string description, string price, string date)
+    {
+      Order myOrder = new Order(orderName, description, price, date);
+      return RedirectToAction("Index");
+    }
+
+    [HttpGet("/orders/{id}")]
+    public ActionResult Show(int id)
+    {
+      Order foundOrder = Order.Find(id);
+      return View(foundOrder);
+    }
+
     [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {

@@ -14,7 +14,7 @@ namespace Bakery.Models
     {
       OrderItem = orderItem;
       Description = description;
-      Price = Price;
+      Price = price;
       Date = date;
       _listOfOrders.Add(this);
       Id = _listOfOrders.Count;

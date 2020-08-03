@@ -8,7 +8,7 @@ namespace Bakery.Models
     public string VendorName { get; set; }
     public string VendorDescription { get; set; }
     public int Id { get; }
-    public List<Order> Order { get; set; }
+    public List<Order> Orders { get; set; }
 
     public Vendor (string vendorName, string vendorDescription)
     {
@@ -16,7 +16,7 @@ namespace Bakery.Models
       VendorDescription = vendorDescription;
       _listOfVendors.Add(this);
       Id = _listOfVendors.Count;
-      Order = new List<Order> {};
+      Orders = new List<Order> {};
     }
     public static void ClearAll()
     {
@@ -34,7 +34,7 @@ namespace Bakery.Models
 
     public void AddOrder(Order order)
     {
-      Order.Add(order);
+      Orders.Add(order);
     }
   }
 }

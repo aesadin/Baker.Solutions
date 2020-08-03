@@ -15,7 +15,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test", "test2", "Test4");
+      Order newOrder = new Order("test", "test2", "Test4", "Test5");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
@@ -34,10 +34,12 @@ namespace Bakery.Tests
       string title2 = "title2";
       string description1 = "this is title1";
       string description2 = "this is title 2";
+      string price1 = "this price1";
+      string price2 = "that price2";
       string date1 = "this date";
       string date2 = "that date";
-      Order newOrder1 = new Order(title1, description1, date1);
-      Order newOrder2 = new Order(title2, description2, date2);
+      Order newOrder1 = new Order(title1, description1, price1, date1);
+      Order newOrder2 = new Order(title2, description2, price2, date2);
       List<Order> newList = new List<Order> { newOrder1, newOrder2 };
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
@@ -48,8 +50,9 @@ namespace Bakery.Tests
     {
       string title = "title";
       string description = "this is title";
+      string price = "this price";
       string date = "that date";
-      Order newOrder = new Order(title, description, date);
+      Order newOrder = new Order(title, description, price, date);
 
       int result = newOrder.Id;
 
@@ -62,10 +65,12 @@ namespace Bakery.Tests
       string title2 = "title2";
       string description1 = "this is title1";
       string description2 = "this is title 2";
+      string price1 = "this price1";
+      string price2 = "that price2";
       string date1 = "this date";
       string date2 = "that date";
-      Order newOrder1 = new Order(title1, description1, date1);
-      Order newOrder2 = new Order(title2, description2, date2);
+      Order newOrder1 = new Order(title1, description1, price1, date1);
+      Order newOrder2 = new Order(title2, description2, price2, date2);
 
       Order result = Order.Find(2);
 
