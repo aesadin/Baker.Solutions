@@ -43,7 +43,7 @@ This application will allow the user to create a list of orders and save them in
 
 * Download [Visual Studio Code](https://code.visualstudio.com/) (v1.45)
 
-* Download ZIP [here](https://github.com/tmemmerson/Scrabble.Solution.git) OR if you are comfortable cloning a repo, copy the link as shown below.
+* Download ZIP [here](https://github.com/tmemmerson/Baker.Solution.git) OR if you are comfortable cloning a repo, copy the link as shown below.
 
 ![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone.gif "How to clone repo")
 
